@@ -23,10 +23,10 @@
 \lstset{basicstyle=\ttfamily}
 
 % Title portion
-\title{Assignment 1:\\ {Exploring OpenGL Programming}} 
+\title{Assignment 3:\\ {Basic Ray Tracing}} 
 
-\author{Name: \quad \\ student number:\
-\\email: \quad \texttt{}}
+\author{Name: GaoYe\quad \\ student number: 2022533005\
+\\email: \quad \texttt{gaoye2022@shanghaitech.edu.cn}}
 
 % Document starts
 \begin{document}
@@ -35,8 +35,55 @@
 \vspace*{2 ex}
 
 \section{Introduction}
+The report is about my CG assignment3: Basic Ray Tracing. The following are the functions I managed to achieve.
+\\
+\\
+I can compile the source code and configure the language server environment.\\
+I implemented ray-triangle intersection functionality.\\
+I implemented ray-AABB intersection functionality.\\
+I implemented the BVH construction.\\
+I implemented the IntersectionTestIntegrator and PerfectRefraction material for basic ray tracing validation, handing refractive and solid surface interactions.\\
+I implemented a direct lighting function with diffuse BRDF and shadow testing.\\
+I implemented anti-aliasing via multi-ray sampling per pixel within a sub-pixel aperture.
+
 \section{Implementation Details}
+\subsection{Language server etc.}
+I chose Visual Studio 2022 as the compiler, and vscode as the the workspace. Considering that Visual Studio can not generate compile\_command.json for clangd, I also used Ninja to generate compile\_command.json.
+
+\subsection{Ray-triangle intersection}
+The ray-triangle intersection is implemented using the Möller-Trumbore algorithm, which efficiently computes the intersection point using barycentric coordinates.
+
+\subsection{Ray-AABB intersection}
+The AABB intersection uses the slab method, which computes entry and exit points along each axis and finds their overlap.
+
+\subsection{BVH}
+The BVH construction implements a spatial partitioning structure using median splitting heuristic for balanced tree construction.
+
+\subsection{Integrator and Perfect Refraction material}
+The refraction part implements total internal reflection handling with fallback to reflection.
+
+\subsection{Direct light}
+The direct light implements accurate shadow testing with distance-based occlusion checking, and a simple point light model with uniform intensity distribution.
+
+\subsection{Anti-alising}
+This part is partially implemented by the framework, what really matters is commitSample function, performing proper sample accumulation.
+
 \section{Results}
+The image shown in \ref{fig:final} shows my final render result, and the image \ref{fig:lowSPP} show the scene with low spp(spp = 2).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{finalRender.png}
+    \caption{Final result}
+    \label{fig:final}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{lowSPP.png}
+    \caption{Low spp}
+    \label{fig:lowSPP}
+\end{figure}
 
 \end{document}
 

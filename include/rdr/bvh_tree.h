@@ -183,16 +183,6 @@ use_median_heuristic:
 
     // UNIMPLEMENTED;
     // My implementation
-    // std::nth_element(
-    //     nodes.begin() + span_left,
-    //     nodes.begin() + split,
-    //     nodes.begin() + span_right,
-    //     [dim](const NodeType &a, const NodeType &b) {
-    //       return a.getAABB().getCentroid()[dim] <
-    //              b.getAABB().getCentroid()[dim];
-    //     });
-    // 由于AABB没有getCentroid的成员，上面的设计需要修改：
-    // 改正后的实现如下：
     std::nth_element(
         nodes.begin() + span_left,
         nodes.begin() + split,

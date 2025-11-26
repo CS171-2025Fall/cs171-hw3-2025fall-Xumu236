@@ -86,14 +86,6 @@ struct rdr_exception : public std::runtime_error {  // NOLINT
   do {                                        \
     throw rdr_exception(format(__VA_ARGS__)); \
   } while (false)
-// Question：这些宏（Info、Warning、Error）的输出要去哪里找？
-// Answer:
-// 这些宏（Info_、Warn_、Error_）是基于spdlog日志库定义的，用于在渲染器运行过程中输出不同级别的日志信息。默认情况下，这些日志信息会输出到标准输出（控制台）。具体来说：
-// 1. Info_宏用于输出信息性日志，通常用于记录程序的执行状态和重要事件。
-// 2. Warn_宏用于输出警告日志，表示程序可能遇到了一些非致命的问题。
-// 3. Error_宏用于输出错误日志，表示程序遇到了严重的问题，需要引起注意。
-// 如果您在终端中没有看到相关输出，可能是因为日志级别设置较高，或者输出被重定向到了其他地方。您可以检查日志配置，确保相应级别的日志被正确显示在终端中。
-
 namespace fs = std::filesystem;
 
 RDR_NAMESPACE_BEGIN

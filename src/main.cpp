@@ -149,12 +149,6 @@ int rdr_main(int argc, char *argv[]) {  // NOLINT: alias of main function
   Info_("Render Finished in {}s", time);
   print("=== RDR171 Finished ===\n");
   return 0;
-  // Question: Info_是不是输出了什么？我在我的终端里没有找到相关的输出。
-  // Answer:
-  // 是的，Info_是一个日志输出宏，用于在渲染器运行过程中输出信息性日志。它通常用于记录程序的执行状态、重要事件或调试信息，帮助开发者和用户了解渲染过程中的各个步骤和状态变化。如果您在终端中没有看到相关输出，可能是因为日志级别设置较高，或者输出被重定向到了其他地方。您可以检查日志配置，确保Info级别的日志被正确显示在终端中。
-  // Question: 我应该去哪查看日志设置？
-  // Answer:
-  // 日志设置通常在渲染器的初始化代码中进行配置。在这个渲染器中，日志初始化是在InitLogger函数中完成的。您可以查看该函数的实现，了解日志的输出目标和日志级别的设置。此外，您还可以检查spdlog库的文档，因为这个渲染器使用了spdlog作为日志库。确保在调用InitLogger时传递了正确的参数，以便启用所需级别的日志输出。如果需要，您还可以修改InitLogger函数，以更改日志的输出位置（例如，输出到文件而不是终端）或调整日志级别。
 }
 
 int main(int argc, char *argv[]) {
