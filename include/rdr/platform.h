@@ -86,6 +86,13 @@ struct rdr_exception : public std::runtime_error {  // NOLINT
   do {                                        \
     throw rdr_exception(format(__VA_ARGS__)); \
   } while (false)
+// Question：这些宏（Info、Warning、Error）的输出要去哪里找？
+// Answer:
+// 这些宏（Info_、Warn_、Error_）是基于spdlog日志库定义的，用于在渲染器运行过程中输出不同级别的日志信息。默认情况下，这些日志信息会输出到标准输出（控制台）。具体来说：
+// 1. Info_宏用于输出信息性日志，通常用于记录程序的执行状态和重要事件。
+// 2. Warn_宏用于输出警告日志，表示程序可能遇到了一些非致命的问题。
+// 3. Error_宏用于输出错误日志，表示程序遇到了严重的问题，需要引起注意。
+// 如果您在终端中没有看到相关输出，可能是因为日志级别设置较高，或者输出被重定向到了其他地方。您可以检查日志配置，确保相应级别的日志被正确显示在终端中。
 
 namespace fs = std::filesystem;
 
@@ -111,6 +118,12 @@ RDR_FORCEINLINE void InitLogger(bool b_use_err = false, bool b_quite = false) {
   spdlog::set_pattern("[%^%l%$] %v");
   if (b_quite) spdlog::set_level(spdlog::level::err);
 }
+// 这个initlogger函数是用来初始化日志系统的。它配置了日志的输出方式和日志级别，确保在程序运行过程中能够正确地记录和显示日志信息。具体来说，这个函数做了以下几件事：
+// 1.清除默认日志记录器的所有输出接收器（sinks），以便重新配置日志输出方式。
+// 2.根据传入的参数b_use_err，决定日志是输出到标准错误（stderr）还是标准输出（stdout）。如果b_use_err为true，日志将输出到stderr，否则输出到stdout。
+// 3.设置日志的输出格式模式，这里使用了一个简单的模式，显示日志级别和消息内容。
+// 4.如果传入的参数b_quite为true，设置日志级别为错误级别（err），这样只有错误日志会被输出，其他级别的日志将被忽略。
+// 通过调用这个函数，程序可以根据需要灵活地配置日志系统，方便调试和监控程序的运行状态。
 
 RDR_FORCEINLINE void RaiseDebugger() {
 #if defined(_WIN32)

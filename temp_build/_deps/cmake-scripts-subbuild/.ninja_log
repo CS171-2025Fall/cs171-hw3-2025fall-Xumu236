@@ -1,0 +1,21 @@
+# ninja log v6
+2	71	7857818966082079	cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-mkdir	1a4bc6c29b518821
+2	71	7857818966082079	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-mkdir	1a4bc6c29b518821
+72	4190	7857819007287315	cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-download	388067866eff629f
+72	4190	7857819007287315	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-download	388067866eff629f
+4193	4339	7857819007365793	cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-update	f88ece8808456dfb
+4193	4339	7857819007365793	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-update	f88ece8808456dfb
+4339	4411	7857819009484895	cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-patch	f0929ad49152ddfa
+4339	4411	7857819009484895	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-patch	f0929ad49152ddfa
+4411	4487	7857819010083628	cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-configure	e7906fbfc570a706
+4411	4487	7857819010083628	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-configure	e7906fbfc570a706
+4487	4564	7857819010996799	cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-build	5563dddb052bf4fb
+4487	4564	7857819010996799	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-build	5563dddb052bf4fb
+4564	4640	7857819011764159	cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-install	b221b9d30c37bdf5
+4564	4640	7857819011764159	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-install	b221b9d30c37bdf5
+4640	4718	7857819012555124	cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-test	ef5a5651300a5d25
+4640	4718	7857819012555124	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-test	ef5a5651300a5d25
+4719	4820	7857819013565905	CMakeFiles/cmake-scripts-populate-complete	df9bbf12d0a84aaa
+4719	4820	7857819013565905	cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-done	df9bbf12d0a84aaa
+4719	4820	7857819013565905	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/CMakeFiles/cmake-scripts-populate-complete	df9bbf12d0a84aaa
+4719	4820	7857819013565905	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-done	df9bbf12d0a84aaa

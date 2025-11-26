@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/CMakeFiles/tinyexr-populate"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/CMakeFiles/tinyexr-populate.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/CMakeFiles/tinyexr-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-build.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-download.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-install.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-test.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"tinyexr-populate"
+		],
+		"name" : "tinyexr-populate"
+	}
+}

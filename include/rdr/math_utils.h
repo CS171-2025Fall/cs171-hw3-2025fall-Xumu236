@@ -14,6 +14,7 @@
 
 #include <algorithm>
 #include <array>
+#include <cmath>
 #include <random>
 
 #include "rdr/canary.h"
@@ -168,6 +169,8 @@ struct Frame {
 
   Vec3f n, x, y;
 };
+// Question：请向我解释Frame类的作用和用法。
+// Answer：Frame类用于表示一个局部坐标系，通常用于计算机图形学中的光线追踪和渲染。它包含三个正交的基向量n、x和y，分别表示局部坐标系的法线方向和两个切线方向。Frame类提供了两个主要的方法：WorldToLocal和LocalToWorld。WorldToLocal方法将一个在全球坐标系中的向量转换为局部坐标系中的向量，而LocalToWorld方法则将一个在局部坐标系中的向量转换回全球坐标系。这些转换通常通过线性代数操作实现，例如矩阵乘法或向量点积，利用Frame类中存储的基向量来完成坐标变换。使用Frame类可以简化在渲染过程中处理光线和表面交互时的计算，使得代码更加清晰和高效。
 
 /// Definitions for OffsetRayOrigin
 namespace detail_ {
@@ -317,22 +320,72 @@ enum class EMeasure {
 
 RDR_FORCEINLINE Vec2f UniformSampleDisk(const Vec2f &u) {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  Float r     = sqrt(u.x);
+  Float theta = 2 * PI * u.y;
+  return r * Vec2f(std::cos(theta), std::sin(theta));
+  // Question: 请解释这个函数的实现原理。
+  // Answer:
+  // 该函数实现了在单位圆盘上均匀采样的功能。首先，通过对输入的二维均匀随机变量u的第一个分量进行平方根变换，得到半径r，这样可以确保采样点在圆盘内均匀分布。然后，通过将第二个分量乘以2π，得到角度theta，从而确定采样点在圆盘上的位置。最后，使用极坐标转换公式，将(r,
+  // theta)转换为笛卡尔坐标系下的(x,
+  // y)坐标，并返回该坐标作为采样结果。这种方法确保了采样点在圆盘内的均匀分布。
+  // Question: 为什么平方根变换会确保采样点在圆盘内均匀分布？
+  // Answer:
+  // 在二维空间中，均匀分布的点在圆盘内的密度应该与面积成正比。圆盘的面积与半径的平方成正比，因此为了在圆盘内均匀分布采样点，我们需要对半径进行平方根变换。具体来说，如果我们直接使用均匀分布的随机变量作为半径，那么采样点会更集中在圆盘的中心区域，而不是均匀分布在整个圆盘内。通过对随机变量进行平方根变换，我们可以确保采样点在圆盘内的分布是均匀的，从而实现真正的均匀采样。
+  // Question：也就是说，这个函数接受两个随机参数的输入，然后用第一个参数确定采样点到圆心的距离，用第二个参数确定采样点的角度，从而在圆盘内均匀分布采样点，是吗？
+  // Answer:
+  // 是的，您理解得很正确。该函数通过接受两个均匀随机变量作为输入，第一个变量用于确定采样点到圆心的距离（通过平方根变换得到半径r），第二个变量用于确定采样点的角度（通过乘以2π得到角度theta）。这样，函数能够在单位圆盘内均匀分布采样点，确保每个区域的采样概率相等。
+  // Question：那么这两个随机变量参数都需要在一定范围内（比如x应该在0到1之间，y应该在0到2pi），对吗？
+  // Answer:
+  // 实际上，这两个随机变量参数u.x和u.y都应该在[0,
+  // 1)的范围内。函数内部会将u.x进行平方根变换以得到半径r，而u.y则通过乘以2π来计算角度theta。因此，输入的随机变量不需要直接在[0,
+  // 2π)范围内，而是通过函数内部的转换来实现这一点。这样设计的目的是为了简化采样过程，同时确保采样点在圆盘内均匀分布。
 }
 
 RDR_FORCEINLINE Vec3f UniformSampleHemisphere(const Vec2f &u) {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  Float theta = acos(1 - u.x);
+  Float phi   = 2 * PI * u.y;
+  return SphericalDirection(theta, phi);
 }
+// Question: 请解释这个函数的实现原理。
+// Answer:
+// 该函数实现了在单位半球面上均匀采样的功能。首先，通过将输入的二维均匀随机变量u的第一个分量直接作为z坐标，确保采样点在半球面上的高度分布是均匀的。然后，计算半径r，表示采样点在xy平面上的投影距离，使用公式r
+// = sqrt(1 -
+// z^2)来确保采样点位于单位半球面上。接着，通过将第二个分量乘以2π，得到角度phi，从而确定采样点在xy平面上的位置。最后，使用极坐标转换公式，将(r,
+// phi, z)转换为笛卡尔坐标系下的(x, y,
+// z)坐标，并返回该坐标作为采样结果。这种方法确保了采样点在单位半球面上的均匀分布。
+// Question:
+// 为什么直接使用u.x作为z坐标会确保采样点在半球面上的高度分布是均匀的？
+// Answer:
+// 在单位半球面上，z坐标的范围是从0到1。为了确保采样点在半球面上的高度分布是均匀的，我们可以直接使用均匀分布的随机变量u.x作为z坐标。这样，z坐标在[0,
+// 1)范围内均匀分布，从而确保采样点在半球面上的高度分布也是均匀的。通过这种方式，我们避免了复杂的变换，同时保持了采样点在半球面上的均匀分布特性。
+// Question：如果我有一个函数，接收theta和phi作为参数，theta是从z轴到采样点的夹角，phi是xy平面上的角度，最后能返回直角坐标。那么我该如何实现UniformSampleHemisphere函数呢？
+// Answer:
+// 如果您有一个函数可以接受theta和phi作为参数，并返回对应的直角坐标，那么您可以按照以下步骤实现UniformSampleHemisphere函数：
+// 1. 首先，计算theta和phi。对于均匀采样的半球面，您可以使用以下公式：
+//    - theta = acos(1 - u.x) // 这里u.x是均匀分布的随机变量，范围在[0, 1)
+//    - phi = 2 * PI * u.y // 这里u.y也是均匀分布的随机变量，范围在[0, 1)
+// 2.
+// 然后，调用您已有的函数，将计算得到的theta和phi作为参数传入，获取对应的直角坐标。
+// 3. 最后，返回该直角坐标作为采样结果。
+// Question：有了这个SphericalDirection函数，看起来sample变得更加简单了，这是为什么？
+// Answer:
+// SphericalDirection函数简化了采样过程，因为它直接将球面坐标（由theta和phi定义）转换为直角坐标系下的三维向量。这意味着，在实现采样函数时，您不需要手动计算x、y和z坐标，而只需计算theta和phi，然后调用SphericalDirection函数即可获得所需的三维向量。这种封装使得代码更加简洁和易读，同时减少了潜在的错误，因为您不需要重复实现坐标转换的逻辑。总之，SphericalDirection函数提供了一种方便的方式来处理球面坐标与直角坐标之间的转换，从而简化了采样过程。
 
 RDR_FORCEINLINE Vec3f CosineSampleHemisphere(const Vec2f &u) {
   // This is left as the next assignment
   UNIMPLEMENTED;
+  return Vec3f();
 }
 
 RDR_FORCEINLINE Vec3f UniformSampleSphere(const Vec2f &u) {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  Float theta = acos(1 - 2 * u.x);
+  Float phi   = 2 * PI * u.y;
+  return SphericalDirection(theta, phi);
 }
 
 RDR_FORCEINLINE Vec3f UniformSampleTriangle(const Vec2f &u) {

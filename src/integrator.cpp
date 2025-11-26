@@ -30,6 +30,8 @@ void IntersectionTestIntegrator::render(ref<Camera> camera, ref<Scene> scene) {
   std::atomic<int> cnt = 0;
 
   const Vec2i &resolution = camera->getFilm()->getResolution();
+
+  print("Rendering with spp = {}\n", spp);
 #pragma omp parallel for schedule(dynamic)
   for (int dx = 0; dx < resolution.x; dx++) {
     ++cnt;
@@ -63,6 +65,16 @@ void IntersectionTestIntegrator::render(ref<Camera> camera, ref<Scene> scene) {
         // assert(pixel_sample.y >= dy && pixel_sample.y <= dy + 1);
         // const Vec3f &L = Li(scene, ray, sampler);
         // camera->getFilm()->commitSample(pixel_sample, L);
+        // UNIMPLEMENTED;
+        // My implementation
+        const Vec2f &pixel_sample = sampler.getPixelSample();
+        auto ray =
+            camera->generateDifferentialRay(pixel_sample.x, pixel_sample.y);
+        // Accumulate radiance
+        assert(pixel_sample.x >= dx && pixel_sample.x <= dx + 1);
+        assert(pixel_sample.y >= dy && pixel_sample.y <= dy + 1);
+        const Vec3f &L = Li(scene, ray, sampler);
+        camera->getFilm()->commitSample(pixel_sample, L);
       }
     }
   }
@@ -104,7 +116,12 @@ Vec3f IntersectionTestIntegrator::Li(
       // @see SurfaceInteraction::spawnRay
       //
       // You should update ray = ... with the spawned ray
-      UNIMPLEMENTED;
+      // UNIMPLEMENTED;
+      // continue;
+      // My implementation
+      Vec3f new_direction =
+          interaction.bsdf->sample(interaction, sampler, nullptr);
+      ray = interaction.spawnRay(new_direction);
       continue;
     }
 
@@ -148,7 +165,13 @@ Vec3f IntersectionTestIntegrator::directLighting(
   //
   //    You can use iteraction.p to get the intersection position.
   //
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  // My implementation
+  SurfaceInteraction temp_interaction;
+  bool occluded = scene->intersect(test_ray, temp_interaction);
+  if (occluded && Norm(temp_interaction.p - interaction.p) < dist_to_light) {
+    return color;  // Occluded
+  }
 
   // Not occluded, compute the contribution using perfect diffuse diffuse model
   // Perform a quick and dirty check to determine whether the BSDF is ideal
@@ -170,7 +193,12 @@ Vec3f IntersectionTestIntegrator::directLighting(
 
     // You should assign the value to color
     // color = ...
-    UNIMPLEMENTED;
+    // UNIMPLEMENTED;
+    // My implementation
+    Vec3f albedo = bsdf->evaluate(interaction) * cos_theta;
+    Vec3f point_light_intensity =
+        Vec3f(1.0f);  // Assume the point light has intensity (1, 1, 1)
+    color = albedo * point_light_intensity;
   }
 
   return color;
@@ -184,19 +212,22 @@ Vec3f IntersectionTestIntegrator::directLighting(
 
 void PathIntegrator::render(ref<Camera> camera, ref<Scene> scene) {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  print("PathIntegrator::render is not implemented yet.\n");
 }
 
 Vec3f PathIntegrator::Li(
     ref<Scene> scene, DifferentialRay &ray, Sampler &sampler) const {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  return Vec3f(0.0f);
 }
 
 Vec3f PathIntegrator::directLighting(
     ref<Scene> scene, SurfaceInteraction &interaction, Sampler &sampler) const {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  return Vec3f(0.0f);
 }
 
 /* ===================================================================== *
@@ -218,7 +249,8 @@ template <typename PathType>
 Vec3f IncrementalPathIntegrator::Li(  // NOLINT
     ref<Scene> scene, DifferentialRay &ray, Sampler &sampler) const {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  return Vec3f(0.0f);
 }
 
 RDR_NAMESPACE_END

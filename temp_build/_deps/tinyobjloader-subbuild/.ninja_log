@@ -1,0 +1,21 @@
+# ninja log v6
+1	58	7857819636041268	tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-mkdir	341435ef5c2c67e9
+1	58	7857819636041268	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyobjloader-subbuild/tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-mkdir	341435ef5c2c67e9
+60	4462	7857819680002555	tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-download	1a66a37110452d10
+60	4462	7857819680002555	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyobjloader-subbuild/tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-download	1a66a37110452d10
+4465	4592	7857819680174747	tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-update	1b5ae08502032cc4
+4465	4592	7857819680174747	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyobjloader-subbuild/tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-update	1b5ae08502032cc4
+4592	4663	7857819682022317	tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-patch	21354d9a56d596ef
+4592	4663	7857819682022317	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyobjloader-subbuild/tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-patch	21354d9a56d596ef
+4663	4719	7857819682651834	tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-configure	1fbd472d61c91353
+4663	4719	7857819682651834	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyobjloader-subbuild/tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-configure	1fbd472d61c91353
+4719	4786	7857819683326421	tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-build	22898c70786b8af
+4719	4786	7857819683326421	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyobjloader-subbuild/tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-build	22898c70786b8af
+4786	4842	7857819683892475	tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-install	537fbe8d35194798
+4786	4842	7857819683892475	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyobjloader-subbuild/tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-install	537fbe8d35194798
+4842	4903	7857819684496975	tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-test	33e3a6bffbfdfd59
+4842	4903	7857819684496975	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyobjloader-subbuild/tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-test	33e3a6bffbfdfd59
+4904	4986	7857819685332270	CMakeFiles/tinyobjloader-populate-complete	72ada401906a0f1c
+4904	4986	7857819685332270	tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-done	72ada401906a0f1c
+4904	4986	7857819685332270	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyobjloader-subbuild/CMakeFiles/tinyobjloader-populate-complete	72ada401906a0f1c
+4904	4986	7857819685332270	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyobjloader-subbuild/tinyobjloader-populate-prefix/src/tinyobjloader-populate-stamp/tinyobjloader-populate-done	72ada401906a0f1c

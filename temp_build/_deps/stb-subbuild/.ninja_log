@@ -1,0 +1,21 @@
+# ninja log v6
+2	66	7857820147750613	stb-populate-prefix/src/stb-populate-stamp/stb-populate-mkdir	ab0e86334c699212
+2	66	7857820147750613	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-mkdir	ab0e86334c699212
+66	4488	7857820191970903	stb-populate-prefix/src/stb-populate-stamp/stb-populate-download	2b9cb8b478473950
+66	4488	7857820191970903	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-download	2b9cb8b478473950
+4488	6879	7857820192030203	stb-populate-prefix/src/stb-populate-stamp/stb-populate-update	304f8d9b49ce48b8
+4488	6879	7857820192030203	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-update	304f8d9b49ce48b8
+6881	6957	7857820216531382	stb-populate-prefix/src/stb-populate-stamp/stb-populate-patch	69290a64cb13d974
+6881	6957	7857820216531382	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-patch	69290a64cb13d974
+6957	7016	7857820217252202	stb-populate-prefix/src/stb-populate-stamp/stb-populate-configure	6721a9e5e6509d38
+6957	7016	7857820217252202	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-configure	6721a9e5e6509d38
+7016	7087	7857820217959114	stb-populate-prefix/src/stb-populate-stamp/stb-populate-build	e5202f70afb9873f
+7016	7087	7857820217959114	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-build	e5202f70afb9873f
+7087	7159	7857820218534351	stb-populate-prefix/src/stb-populate-stamp/stb-populate-install	d49dca309a6a1604
+7087	7159	7857820218534351	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-install	d49dca309a6a1604
+7159	7214	7857820219241295	stb-populate-prefix/src/stb-populate-stamp/stb-populate-test	d2b2ddee407e71
+7159	7214	7857820219241295	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-test	d2b2ddee407e71
+7214	7308	7857820220179427	CMakeFiles/stb-populate-complete	bcc6b7c92d29dc43
+7214	7308	7857820220179427	stb-populate-prefix/src/stb-populate-stamp/stb-populate-done	bcc6b7c92d29dc43
+7214	7308	7857820220179427	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/CMakeFiles/stb-populate-complete	bcc6b7c92d29dc43
+7214	7308	7857820220179427	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-done	bcc6b7c92d29dc43

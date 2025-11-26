@@ -18,11 +18,11 @@ CPMAddPackage(
   DOWNLOAD_ONLY YES
 )
 
-if (tinyexr_ADDED)
+if(tinyexr_ADDED)
   add_library(tinyexr STATIC ${tinyexr_SOURCE_DIR}/tinyexr.cc)
   target_include_directories(tinyexr INTERFACE ${tinyexr_SOURCE_DIR})
-  target_compile_definitions(tinyexr PUBLIC -DTINYEXR_USE_MINIZ=1 -DTINYEXR_USE_PIZ=1 
-                                            -DTINYEXR_USE_OPENMP=0 -DTINYEXR_USE_STB_ZLIB=0)
+  target_compile_definitions(tinyexr PUBLIC -DTINYEXR_USE_MINIZ=1 -DTINYEXR_USE_PIZ=1
+    -DTINYEXR_USE_OPENMP=0 -DTINYEXR_USE_STB_ZLIB=0)
   target_link_libraries(tinyexr PRIVATE miniz)
 endif()
 
@@ -33,7 +33,7 @@ CPMAddPackage(
   DOWNLOAD_ONLY YES
 )
 
-if (linalg_ADDED)
+if(linalg_ADDED)
   add_library(linalg INTERFACE)
   target_include_directories(linalg INTERFACE ${linalg_SOURCE_DIR})
 endif()
@@ -45,7 +45,7 @@ CPMAddPackage(
   DOWNLOAD_ONLY YES
 )
 
-if (stb_ADDED)
+if(stb_ADDED)
   add_library(stb INTERFACE)
   target_include_directories(stb INTERFACE ${stb_SOURCE_DIR})
   message(STATUS ${stb_SOURCE_DIR})
@@ -58,31 +58,31 @@ CPMAddPackage(
   OPTIONS "INSTALL_GTEST OFF" "gtest_force_shared_crt"
 )
 
-if (USE_EMBREE)
+if(USE_EMBREE)
   # External BVH library
   CPMAddPackage(
     NAME embree
     GITHUB_REPOSITORY embree/embree
     GIT_TAG v4.1.0
-    OPTIONS "EMBREE_ISPC_SUPPORT OFF" 
-            "EMBREE_TUTORIALS OFF"
-            "EMBREE_FILTER_FUNCTION OFF"
-            "EMBREE_RAY_PACKETS OFF"
-            "EMBREE_RAY_MASK OFF"
-            "EMBREE_GEOMETRY_GRID OFF"
-            "EMBREE_GEOMETRY_QUAD OFF"
-            "EMBREE_GEOMETRY_CURVE OFF"
-            "EMBREE_GEOMETRY_SUBDIVISION OFF"
-            "EMBREE_GEOMETRY_USER OFF"
-            "EMBREE_GEOMETRY_POINT OFF"
-            "EMBREE_DISC_POINT_SELF_INTERSE OFF"
-            
-            "EMBREE_MAX_ISA NONE"
-            "EMBREE_ISA_AVX OFF"
-            "EMBREE_ISA_AVX2 ON"
-            "EMBREE_ISA_AVX512 OFF"
-            "EMBREE_ISA_SSE2 OFF"
-            "EMBREE_ISA_SSE42 OFF"
+    OPTIONS "EMBREE_ISPC_SUPPORT OFF"
+    "EMBREE_TUTORIALS OFF"
+    "EMBREE_FILTER_FUNCTION OFF"
+    "EMBREE_RAY_PACKETS OFF"
+    "EMBREE_RAY_MASK OFF"
+    "EMBREE_GEOMETRY_GRID OFF"
+    "EMBREE_GEOMETRY_QUAD OFF"
+    "EMBREE_GEOMETRY_CURVE OFF"
+    "EMBREE_GEOMETRY_SUBDIVISION OFF"
+    "EMBREE_GEOMETRY_USER OFF"
+    "EMBREE_GEOMETRY_POINT OFF"
+    "EMBREE_DISC_POINT_SELF_INTERSE OFF"
 
-            "EMBREE_TASKING_SYSTEM INTERNAL")
+    "EMBREE_MAX_ISA NONE"
+    "EMBREE_ISA_AVX OFF"
+    "EMBREE_ISA_AVX2 ON"
+    "EMBREE_ISA_AVX512 OFF"
+    "EMBREE_ISA_SSE2 OFF"
+    "EMBREE_ISA_SSE42 OFF"
+
+    "EMBREE_TASKING_SYSTEM INTERNAL")
 endif()

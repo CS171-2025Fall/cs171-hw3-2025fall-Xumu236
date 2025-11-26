@@ -1,0 +1,14 @@
+# Target labels
+ googletest-populate
+# Source files and their labels
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/CMakeFiles/googletest-populate
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update.rule

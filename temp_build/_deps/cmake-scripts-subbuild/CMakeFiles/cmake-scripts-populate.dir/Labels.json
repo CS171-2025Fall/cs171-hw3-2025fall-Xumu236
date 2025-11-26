@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/CMakeFiles/cmake-scripts-populate"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/CMakeFiles/cmake-scripts-populate.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/CMakeFiles/cmake-scripts-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-build.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-download.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-install.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-test.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/cmake-scripts-subbuild/cmake-scripts-populate-prefix/src/cmake-scripts-populate-stamp/cmake-scripts-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cmake-scripts-populate"
+		],
+		"name" : "cmake-scripts-populate"
+	}
+}

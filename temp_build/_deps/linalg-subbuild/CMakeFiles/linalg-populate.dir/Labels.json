@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/CMakeFiles/linalg-populate"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/CMakeFiles/linalg-populate.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/CMakeFiles/linalg-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-build.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-download.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-install.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-test.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"linalg-populate"
+		],
+		"name" : "linalg-populate"
+	}
+}

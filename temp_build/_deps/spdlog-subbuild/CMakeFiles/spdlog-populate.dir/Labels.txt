@@ -1,0 +1,14 @@
+# Target labels
+ spdlog-populate
+# Source files and their labels
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate-complete.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-build.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-configure.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-download.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-install.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-mkdir.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-patch.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-test.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-update.rule

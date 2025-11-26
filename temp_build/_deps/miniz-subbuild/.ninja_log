@@ -1,0 +1,21 @@
+# ninja log v6
+1	58	7857819688962844	miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-mkdir	d76447bc6ade844c
+1	58	7857819688962844	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/miniz-subbuild/miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-mkdir	d76447bc6ade844c
+59	5394	7857819742324756	miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-download	7261f6990646dd2
+59	5394	7857819742324756	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/miniz-subbuild/miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-download	7261f6990646dd2
+5394	5528	7857819742373409	miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-update	55c89de1e99d5f78
+5394	5528	7857819742373409	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/miniz-subbuild/miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-update	55c89de1e99d5f78
+5528	5584	7857819744215357	miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-patch	e337d3797b174e9d
+5528	5584	7857819744215357	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/miniz-subbuild/miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-patch	e337d3797b174e9d
+5584	5646	7857819744831561	miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-configure	91fdfc492bfbe95d
+5584	5646	7857819744831561	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/miniz-subbuild/miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-configure	91fdfc492bfbe95d
+5646	5706	7857819745434479	miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-build	e8d829fcb855221
+5646	5706	7857819745434479	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/miniz-subbuild/miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-build	e8d829fcb855221
+5706	5763	7857819746004678	miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-install	b6fa72b6c5c63d7c
+5706	5763	7857819746004678	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/miniz-subbuild/miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-install	b6fa72b6c5c63d7c
+5763	5825	7857819746572974	miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-test	e07617219e1e439f
+5763	5825	7857819746572974	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/miniz-subbuild/miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-test	e07617219e1e439f
+5826	5906	7857819747435360	CMakeFiles/miniz-populate-complete	33bc0e403a4eb93f
+5826	5906	7857819747435360	miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-done	33bc0e403a4eb93f
+5826	5906	7857819747435360	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/miniz-subbuild/CMakeFiles/miniz-populate-complete	33bc0e403a4eb93f
+5826	5906	7857819747435360	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/miniz-subbuild/miniz-populate-prefix/src/miniz-populate-stamp/miniz-populate-done	33bc0e403a4eb93f

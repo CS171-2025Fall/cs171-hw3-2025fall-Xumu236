@@ -14,19 +14,22 @@ void NativeRender::initialize() {
   // Initialization is break into steps
   // Pass 1: create all objects with property and fill the
   // CrossConfigurationContext
+  print("// Initializing renderer components...\n");
   cross_context.root_properties = props;
   cross_context.film =
       RDR_CREATE_CLASS(Film, props.getProperty<Properties>("film"));
   cross_context.camera =
       RDR_CREATE_CLASS(Camera, props.getProperty<Properties>("camera"));
   cross_context.scene = RDR_CREATE_CLASS(Scene, props);
+  print("// Scene and camera initialized.\n");
   cross_context.integrator =
       RDR_CREATE_CLASS(Integrator, props.getProperty<Properties>("integrator"));
-
+  print("// Integrator initialized.\n");
   // Initialize the optional filter
   cross_context.filter = RDR_CREATE_CLASS(ReconstructionFilter,
       props.getProperty<Properties>("film").getProperty<Properties>(
           "filter", Properties{}));  // else return an empty property
+  print("// Renderer components initialized.\n");
 
   if (props.hasProperty("textures")) {
     auto texture_properties = props.getProperty<Properties>("textures");
@@ -53,6 +56,7 @@ void NativeRender::initialize() {
     cross_context.environment_map = RDR_CREATE_CLASS(
         InfiniteAreaLight, props.getProperty<Properties>("environment_map"));
   }
+  print("// Initialization completed.\n");
 
   /* ===================================================================== *
    *
@@ -65,6 +69,7 @@ void NativeRender::initialize() {
   // Pass 2: invoke all crossConfiguration
   for (ConfigurableObject *cobject : global_context)
     cobject->crossConfiguration(cross_context);
+  print("// Cross-configuration completed.\n");
 }
 
 void NativeRender::clearRuntimeInfo() {
@@ -81,7 +86,7 @@ void NativeRender::preprocess() {
   for (ConfigurableObject *cobject : global_context)
     cobject->preprocess(preprocess_context);
 
-  // Debug info
+    // Debug info
 #if false
   for (ConfigurableObject *cobject : global_context)
     Info_("{}", cobject->toString());
@@ -95,6 +100,7 @@ void NativeRender::render() {
 
 bool NativeRender::exportImageToDisk(const fs::path &path) const {
   // save image to disk
+  print("Exporting image to {}\n", path.string());
   cross_context.film->exportImageToFile(FileResolver::resolveToAbs(path));
   return true;
 }

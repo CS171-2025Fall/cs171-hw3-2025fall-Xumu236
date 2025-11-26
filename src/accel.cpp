@@ -43,8 +43,59 @@ bool AABB::intersect(const Ray &ray, Float *t_in, Float *t_out) const {
   //    for getting the inverse direction of the ray.
   // @see Min/Max/ReduceMin/ReduceMax
   //    for vector min/max operations.
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  // My implementation
+  Vec3f inv_dir = ray.safe_inverse_direction;
+  Vec3f t0      = (low_bnd - ray.origin) * inv_dir;
+  Vec3f t1      = (upper_bnd - ray.origin) * inv_dir;
+  Vec3f tmin    = Min(t0, t1);
+  Vec3f tmax    = Max(t0, t1);
+  Float t_enter = ReduceMax(tmin);
+  Float t_exit  = ReduceMin(tmax);
+
+  // 首先检查是否确实相交
+  if (t_enter > t_exit) {
+    return false;
+  }
+
+  // 检查相交是否在射线的有效时间范围内
+  if (t_exit < ray.t_min || t_enter > ray.t_max) {
+    return false;
+  }
+
+  // 确保进入时间不小于t_min
+  t_enter = Max(t_enter, ray.t_min);
+  // 确保退出时间不大于t_max
+  t_exit = Min(t_exit, ray.t_max);
+
+  // 最终确认有有效的相交段
+  if (t_enter > t_exit) {
+    return false;
+  }
+
+  if (t_in) {
+    *t_in = t_enter;
+  }
+  if (t_out) {
+    *t_out = t_exit;
+  }
+
+  return true;
 }
+// Question：上面的函数功能完整吗？
+// Answer：是的，AABB::intersect函数实现了射线与轴对齐包围盒（AABB）的相交测试功能。它计算了射线进入和退出AABB的时间，并根据这些时间判断是否存在交点。如果存在交点，函数会更新t_in和t_out指针指向的值，并返回true，否则返回false。
+// Question：我实际补全的部分仅仅做了判断，然后return false，是不是不完整？
+// Answer：是的，仅仅判断并返回false是不完整的。完整的实现应该包括计算射线进入和退出AABB的时间，并在有交点时更新t_in和t_out指针指向的值。你需要补全这些计算部分，以确保函数能够正确处理所有情况。
+// Question：那我需要补全哪些部分呢？
+// Answer：你需要补全以下部分：
+// 1. 计算射线与AABB的交点时间t_in和t_out。
+// 2. 检查t_in和t_out是否在射线的有效范围内（ray.t_min <= t_in <=
+// ray.t_max和ray.t_min <= t_out <= ray.t_max）。
+// 3. 如果有交点，更新t_in和t_out指针指向的值，并返回true。
+// 否则，返回false。
+
+//   return false;
+// }
 
 /* ===================================================================== *
  *
@@ -92,10 +143,34 @@ bool TriangleIntersect(Ray &ray, const uint32_t &triangle_index,
   // You can use @see Cross and @see Dot for determinant calculations.
 
   // Delete the following lines after you implement the function
-  InternalScalarType u = InternalScalarType(0);
-  InternalScalarType v = InternalScalarType(0);
-  InternalScalarType t = InternalScalarType(0);
-  UNIMPLEMENTED;
+  // InternalScalarType u = InternalScalarType(0);
+  // InternalScalarType v = InternalScalarType(0);
+  // InternalScalarType t = InternalScalarType(0);
+  // UNIMPLEMENTED;
+  // My implementation
+
+  InternalVecType edge1  = v1 - v0;
+  InternalVecType edge2  = v2 - v0;
+  InternalVecType pvec   = Cross(dir, edge2);
+  InternalScalarType det = Dot(edge1, pvec);
+  if (abs(det) < InternalScalarType(1e-8)) {
+    return false;
+  }
+  InternalScalarType inv_det = InternalScalarType(1) / det;
+  InternalVecType tvec       = Cast<InternalScalarType>(ray.origin) - v0;
+  InternalScalarType u       = Dot(tvec, pvec) * inv_det;
+  if (u < InternalScalarType(0) || u > InternalScalarType(1)) {
+    return false;
+  }
+  InternalVecType qvec = Cross(tvec, edge1);
+  InternalScalarType v = Dot(dir, qvec) * inv_det;
+  if (v < InternalScalarType(0) || u + v > InternalScalarType(1)) {
+    return false;
+  }
+  InternalScalarType t = Dot(edge2, qvec) * inv_det;
+  if (t < InternalScalarType(ray.t_min) || t > InternalScalarType(ray.t_max)) {
+    return false;
+  }
 
   // We will reach here if there is an intersection
 
@@ -108,6 +183,17 @@ bool TriangleIntersect(Ray &ray, const uint32_t &triangle_index,
   ray.setTimeMax(t);
   return true;
 }
+// Question：上面的函数功能完整吗？
+// Answer：是的，TriangleIntersect函数实现了射线与三角形的相交测试功能。它计算了射线与三角形的交点，并检查了交点是否在射线的有效范围内。如果有交点，函数会更新射线的最大时间并返回true，否则返回false。
+// Question：我实际补全的部分仅仅做了判断，然后return false，是不是不完整？
+// Answer：是的，仅仅判断并返回false是不完整的。完整的实现应该包括计算交点的参数u、v和t，并在有交点时更新射线的最大时间和交点信息。你需要补全这些计算部分，以确保函数能够正确处理所有情况。
+// Question：那我需要补全哪些部分呢？
+// Answer：你需要补全以下部分：
+// 1. 计算参数u、v和t，表示交点在三角形上的位置和射线的距离。
+// 2. 检查u、v和t是否满足条件（u >= 0, v >= 0, u + v <= 1, ray.t_min <= t <=
+// ray.t_max）。
+// 3.
+// 如果有交点，更新射线的最大时间（ray.setTimeMax(t)）并计算交点的微分信息（CalculateTriangleDifferentials）。
 
 void Accel::setTriangleMesh(const ref<TriangleMeshResource> &mesh) {
   // Build the bounding box

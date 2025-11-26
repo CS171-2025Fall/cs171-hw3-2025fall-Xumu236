@@ -43,13 +43,15 @@ Vec3f IdealDiffusion::evaluate(SurfaceInteraction &interaction) const {
 
 Float IdealDiffusion::pdf(SurfaceInteraction &interaction) const {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  return 0;
 }
 
 Vec3f IdealDiffusion::sample(
     SurfaceInteraction &interaction, Sampler &sampler, Float *out_pdf) const {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  return Vec3f(0.0);
 }
 
 /// return whether the bsdf is perfect transparent or perfect reflection
@@ -104,12 +106,44 @@ Vec3f PerfectRefraction::sample(
   // @see Refract for refraction calculation.
   // @see Reflect for reflection calculation.
 
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  // My implementation
+  // Cast multiple rays per pixel with small offsets for anti-aliasing.
+  // For each ray, trace the ray through transparent objects until it first
+  // intersects a non-transparent (solid) object. Cast a shadow ray from that
+  // intersection point toward the light source to determine visibility. For
+  // each visible intersection, compute direct illumination from the light
+  // source.
+  Vec3f wi;
+  bool refracted = Refract(interaction.wo, normal, eta_corrected, wi);
+  if (!refracted) {
+    print("Total internal reflection occurs in PerfectRefraction BSDF.\n");
+    // Total internal reflection occurs, reflect the ray
+    wi = Reflect(interaction.wo, normal);
+  }
+  // print("PerfectRefraction");
+  // interaction.wi = wi;
+  // 修正：确保wi指向正确的半球
+  // 对于折射，wi应该与normal在相反半球
+  // Float cos_theta_t = Dot(normal, wi);
+  // if (entering && cos_theta_t > 0) {
+  //   // 如果应该是进入但wi与normal同向，需要翻转
+  //   wi = -wi;
+  // } else if (!entering && cos_theta_t < 0) {
+  //   // 如果应该是离开但wi与normal反向，需要翻转
+  //   wi = -wi;
+  // }
+
+  interaction.wi = wi;
 
   // Set the pdf and return value, we dont need to understand the value now
   if (pdf != nullptr) *pdf = 1.0F;
-  return Vec3f(1.0);
+  return interaction.wi;
 }
+// Question：上面这个函数还没有用到sampler参数，是不是不太对？
+// 答：这里的PerfectRefraction是一个理想的折射BSDF，它的行为是确定性的，不涉及随机采样。因此，在这种情况下，sampler参数实际上并不需要被使用。折射方向是由入射方向和法线通过折射定律唯一确定的，所以不需要额外的随机性来决定方向。
+// Question：那这里为什么要设置sampler参数呢？
+// 答：sampler参数通常用于那些需要随机采样的BSDF，比如漫反射或光泽反射等。然而，为了保持接口的一致性，所有BSDF的sample函数都包含sampler参数，即使在某些情况下它并不被使用。这种设计使得调用BSDF的代码可以统一处理不同类型的BSDF，而不需要针对每种情况进行特殊处理。
 
 bool PerfectRefraction::isDelta() const {
   return true;
@@ -140,7 +174,8 @@ Float Glass::pdf(SurfaceInteraction &) const {
 Vec3f Glass::sample(
     SurfaceInteraction &interaction, Sampler &sampler, Float *pdf) const {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  return Vec3f(0.0f);
 }
 
 bool Glass::isDelta() const {
@@ -176,18 +211,21 @@ MicrofacetReflection::MicrofacetReflection(const Properties &props)
 
 Vec3f MicrofacetReflection::evaluate(SurfaceInteraction &interaction) const {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  return Vec3f(0.0f);
 }
 
 Float MicrofacetReflection::pdf(SurfaceInteraction &interaction) const {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  return 0;
 }
 
 Vec3f MicrofacetReflection::sample(
     SurfaceInteraction &interaction, Sampler &sampler, Float *pdf_in) const {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  return Vec3f(0.0f);
 }
 
 /// return whether the bsdf is perfect transparent or perfect reflection

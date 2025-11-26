@@ -1,0 +1,21 @@
+# ninja log v6
+1	59	7857820223173759	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	927c996c658d3c00
+1	59	7857820223173759	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	927c996c658d3c00
+65	9889	7857820321452654	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	9b3a2323e3861b70
+65	9889	7857820321452654	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	9b3a2323e3861b70
+9889	12241	7857820321540941	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	d99866c170470ee8
+9889	12241	7857820321540941	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	d99866c170470ee8
+12241	12313	7857820345619287	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	7cc1e4454493ecbf
+12241	12313	7857820345619287	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	7cc1e4454493ecbf
+12313	12374	7857820346329606	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	2582af2d62f89960
+12313	12374	7857820346329606	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	2582af2d62f89960
+12374	12437	7857820346958732	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	ec525760a781416b
+12374	12437	7857820346958732	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	ec525760a781416b
+12437	12513	7857820347582065	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	ef4946618f9a656
+12437	12513	7857820347582065	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	ef4946618f9a656
+12513	12570	7857820348289579	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	ddcf1b242c3fea0d
+12513	12570	7857820348289579	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	ddcf1b242c3fea0d
+12570	12662	7857820349213224	CMakeFiles/googletest-populate-complete	22332afe7518f3ed
+12570	12662	7857820349213224	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	22332afe7518f3ed
+12570	12662	7857820349213224	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	22332afe7518f3ed
+12570	12662	7857820349213224	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	22332afe7518f3ed

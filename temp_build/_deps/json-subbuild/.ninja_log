@@ -1,0 +1,21 @@
+# ninja log v6
+1	66	7857819099794581	json-populate-prefix/src/json-populate-stamp/json-populate-mkdir	e0c17262af2d4984
+1	66	7857819099794581	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir	e0c17262af2d4984
+66	52806	7857819627194828	json-populate-prefix/src/json-populate-stamp/json-populate-download	8f108008cd407f28
+66	52806	7857819627194828	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download	8f108008cd407f28
+52806	52950	7857819627253758	json-populate-prefix/src/json-populate-stamp/json-populate-update	558af5218f37ea65
+52806	52950	7857819627253758	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update	558af5218f37ea65
+52950	53007	7857819629211910	json-populate-prefix/src/json-populate-stamp/json-populate-patch	a0f9b6bf8892147e
+52950	53007	7857819629211910	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch	a0f9b6bf8892147e
+53007	53074	7857819629874872	json-populate-prefix/src/json-populate-stamp/json-populate-configure	127a2088d09268db
+53007	53074	7857819629874872	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure	127a2088d09268db
+53074	53130	7857819630442113	json-populate-prefix/src/json-populate-stamp/json-populate-build	d792bdf5cd9fa14f
+53074	53130	7857819630442113	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build	d792bdf5cd9fa14f
+53130	53186	7857819630992117	json-populate-prefix/src/json-populate-stamp/json-populate-install	d6bec7a50ffa23a5
+53130	53186	7857819630992117	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install	d6bec7a50ffa23a5
+53186	53254	7857819631564986	json-populate-prefix/src/json-populate-stamp/json-populate-test	24c46bcee98f6796
+53186	53254	7857819631564986	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test	24c46bcee98f6796
+53254	53333	7857819632463336	CMakeFiles/json-populate-complete	8ac78d4abd836e0b
+53254	53333	7857819632463336	json-populate-prefix/src/json-populate-stamp/json-populate-done	8ac78d4abd836e0b
+53254	53333	7857819632463336	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/CMakeFiles/json-populate-complete	8ac78d4abd836e0b
+53254	53333	7857819632463336	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-done	8ac78d4abd836e0b

@@ -1,0 +1,14 @@
+# Target labels
+ tinyexr-populate
+# Source files and their labels
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/CMakeFiles/tinyexr-populate
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/CMakeFiles/tinyexr-populate.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/CMakeFiles/tinyexr-populate-complete.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-build.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-configure.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-download.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-install.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-mkdir.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-patch.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-test.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-update.rule

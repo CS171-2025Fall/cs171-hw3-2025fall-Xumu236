@@ -1,0 +1,14 @@
+# Target labels
+ stb-populate
+# Source files and their labels
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/CMakeFiles/stb-populate
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/CMakeFiles/stb-populate.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/CMakeFiles/stb-populate-complete.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-build.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-configure.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-download.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-install.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-mkdir.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-patch.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-test.rule
+C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/stb-populate-update.rule

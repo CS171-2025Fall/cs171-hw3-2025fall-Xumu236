@@ -13,7 +13,8 @@ RDR_NAMESPACE_BEGIN
 
 Vec3f Path::estimate() const {
   // This is left as the next assignment
-  UNIMPLEMENTED;
+  // UNIMPLEMENTED;
+  return Vec3f(0.0f);
 }
 
 bool Path::verify() const {

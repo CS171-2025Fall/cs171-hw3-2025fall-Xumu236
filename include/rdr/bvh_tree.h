@@ -143,8 +143,8 @@ typename BVHTree<_>::IndexType BVHTree<_>::build(
   // @see span_left: The left index of the current span
   // @see span_right: The right index of the current span
   //
-  /* if ( */ UNIMPLEMENTED; /* ) */
-  {
+  // /* if ( */ UNIMPLEMENTED; /* ) */
+  if (depth >= CUTOFF_DEPTH || (span_right - span_left) <= 1) {
     // create leaf node
     const auto &node = nodes[span_left];
     InternalNode result(span_left, span_right);
@@ -181,11 +181,31 @@ use_median_heuristic:
     //
     // You may find `std::nth_element` useful here.
 
-    UNIMPLEMENTED;
+    // UNIMPLEMENTED;
+    // My implementation
+    // std::nth_element(
+    //     nodes.begin() + span_left,
+    //     nodes.begin() + split,
+    //     nodes.begin() + span_right,
+    //     [dim](const NodeType &a, const NodeType &b) {
+    //       return a.getAABB().getCentroid()[dim] <
+    //              b.getAABB().getCentroid()[dim];
+    //     });
+    // 由于AABB没有getCentroid的成员，上面的设计需要修改：
+    // 改正后的实现如下：
+    std::nth_element(
+        nodes.begin() + span_left,
+        nodes.begin() + split,
+        nodes.begin() + span_right,
+        [dim](const NodeType &a, const NodeType &b) {
+          Vec3f centroid_a = (a.getAABB().low_bnd + a.getAABB().upper_bnd) * 0.5f;
+          Vec3f centroid_b = (b.getAABB().low_bnd + b.getAABB().upper_bnd) * 0.5f;
+          return centroid_a[dim] < centroid_b[dim];
+        });
 
     // clang-format on
   } else if (hprofile == EHeuristicProfile::ESurfaceAreaHeuristic) {
-use_surface_area_heuristic:
+    // use_surface_area_heuristic:
     // See
     // https://www.pbr-book.org/3ed-2018/Primitives_and_Intersection_Acceleration/Bounding_Volume_Hierarchies
     // for algorithm details. In general, like *decision tree*, we evaluate our
@@ -199,7 +219,7 @@ use_surface_area_heuristic:
     //
     // You can then set @see BVHTree::hprofile to ESurfaceAreaHeuristic to
     // enable this feature.
-    UNIMPLEMENTED;
+    // UNIMPLEMENTED;
   }
 
   // Build the left and right subtree
@@ -226,7 +246,7 @@ bool BVHTree<_>::intersect(
 
   if (node.is_leaf) {
     for (IndexType span_index = node.span_left; span_index < node.span_right;
-        ++span_index)
+         ++span_index)
       result |= callback(ray, nodes[span_index].getData());
     return result;
   } else {

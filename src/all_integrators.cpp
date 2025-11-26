@@ -10,6 +10,7 @@ RDR_REGISTER_FACTORY(Integrator, [](const Properties &props) -> Integrator * {
   if (type == "intersection_test") {
     return Memory::alloc<IntersectionTestIntegrator>(props);
   } else {
+    print("Creating integrator of type: {}\n", type);
     Exception_("Integrator type {} not found", type);
   }
 

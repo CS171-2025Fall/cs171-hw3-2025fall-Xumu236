@@ -1,0 +1,21 @@
+# ninja log v6
+1	59	7857819908034478	tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-mkdir	50d69b5a2c72383f
+1	59	7857819908034478	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-mkdir	50d69b5a2c72383f
+65	16395	7857820071289284	tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-download	284d5473bdd8885
+65	16395	7857820071289284	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-download	284d5473bdd8885
+16398	16532	7857820071471972	tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-update	ceb3d3823384290
+16398	16532	7857820071471972	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-update	ceb3d3823384290
+16532	16599	7857820073333048	tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-patch	94384ff093c3a128
+16532	16599	7857820073333048	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-patch	94384ff093c3a128
+16599	16654	7857820073981508	tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-configure	a3120d00287638e9
+16599	16654	7857820073981508	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-configure	a3120d00287638e9
+16654	16728	7857820074711205	tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-build	24f6d3151efdaa7
+16654	16728	7857820074711205	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-build	24f6d3151efdaa7
+16728	16800	7857820075312309	tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-install	c80fdad9a3be15cc
+16728	16800	7857820075312309	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-install	c80fdad9a3be15cc
+16800	16863	7857820076063396	tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-test	79397850de54adfe
+16800	16863	7857820076063396	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-test	79397850de54adfe
+16863	16952	7857820076952500	CMakeFiles/tinyexr-populate-complete	8c29eb8a679d0153
+16863	16952	7857820076952500	tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-done	8c29eb8a679d0153
+16863	16952	7857820076952500	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/CMakeFiles/tinyexr-populate-complete	8c29eb8a679d0153
+16863	16952	7857820076952500	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/tinyexr-subbuild/tinyexr-populate-prefix/src/tinyexr-populate-stamp/tinyexr-populate-done	8c29eb8a679d0153

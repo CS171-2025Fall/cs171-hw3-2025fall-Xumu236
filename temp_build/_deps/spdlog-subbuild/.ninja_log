@@ -1,0 +1,21 @@
+# ninja log v6
+1	75	7857819757555592	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-mkdir	eb7a940601119289
+1	75	7857819757555592	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-mkdir	eb7a940601119289
+76	13517	7857819892099509	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-download	47af1158afbb261f
+76	13517	7857819892099509	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-download	47af1158afbb261f
+13517	13647	7857819892163459	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-update	91167e688951808c
+13517	13647	7857819892163459	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-update	91167e688951808c
+13650	13714	7857819894080068	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-patch	d024275c6708ed8e
+13650	13714	7857819894080068	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-patch	d024275c6708ed8e
+13714	13789	7857819894701048	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-configure	7d4714b92ad09d3
+13714	13789	7857819894701048	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-configure	7d4714b92ad09d3
+13789	13846	7857819895403710	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-build	5a23785732da5f7b
+13789	13846	7857819895403710	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-build	5a23785732da5f7b
+13846	13915	7857819896091936	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-install	8824c54ca528b474
+13846	13915	7857819896091936	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-install	8824c54ca528b474
+13915	13991	7857819896692019	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-test	e564ae0caf60126f
+13915	13991	7857819896692019	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-test	e564ae0caf60126f
+13991	14074	7857819897674529	CMakeFiles/spdlog-populate-complete	94c23c20c66ef260
+13991	14074	7857819897674529	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-done	94c23c20c66ef260
+13991	14074	7857819897674529	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate-complete	94c23c20c66ef260
+13991	14074	7857819897674529	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-done	94c23c20c66ef260

@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 3.16)
 project(CS171-assignment4 LANGUAGES C CXX)
-# cmake_policy(SET CMP0135 NEW)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+# cmake_policy(SET CMP0135 NEW)
 find_program(CCACHE_FOUND ccache)
+
 if(CCACHE_FOUND)
-        set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE ccache)
-        set_property(GLOBAL PROPERTY RULE_LAUNCH_LINK ccache)
+  set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE ccache)
+  set_property(GLOBAL PROPERTY RULE_LAUNCH_LINK ccache)
 endif(CCACHE_FOUND)
 
 option(USE_EMBREE "Enable embree4 as acceleration structure" OFF)
@@ -24,10 +26,10 @@ include(data/CPM.cmake)
 
 # Suppress implicit type conversion error
 # since most of them are emitted by Properties, which is indeed safe
-if (MSVC)
-	add_compile_options(/wd4244) # Disable warning C4244
-	add_compile_options(/wd4267)
-	add_compile_options(/wd4359)
+if(MSVC)
+  add_compile_options(/wd4244) # Disable warning C4244
+  add_compile_options(/wd4267)
+  add_compile_options(/wd4359)
 endif()
 
 # Include cmake scripts

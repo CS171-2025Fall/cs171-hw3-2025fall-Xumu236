@@ -1,0 +1,21 @@
+# ninja log v6
+1	59	7857820080053830	linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-mkdir	3b7152d484ee086e
+1	59	7857820080053830	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-mkdir	3b7152d484ee086e
+65	3789	7857820117344124	linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-download	726bd1cfb6d284e1
+65	3789	7857820117344124	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-download	726bd1cfb6d284e1
+3789	6134	7857820117403013	linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-update	23da1fd1a008fdda
+3789	6134	7857820117403013	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-update	23da1fd1a008fdda
+6137	6197	7857820141434589	linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-patch	68d976189a57d999
+6137	6197	7857820141434589	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-patch	68d976189a57d999
+6197	6254	7857820142000213	linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-configure	4c74b71fa4878bf2
+6197	6254	7857820142000213	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-configure	4c74b71fa4878bf2
+6254	6309	7857820142550633	linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-build	3e6ec069870b3dfd
+6254	6309	7857820142550633	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-build	3e6ec069870b3dfd
+6309	6376	7857820143213576	linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-install	e2006c244cb354e5
+6309	6376	7857820143213576	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-install	e2006c244cb354e5
+6376	6433	7857820143788554	linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-test	4032988357e39cc6
+6376	6433	7857820143788554	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-test	4032988357e39cc6
+6434	6519	7857820144654439	CMakeFiles/linalg-populate-complete	dc0210fec62b6aaf
+6434	6519	7857820144654439	linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-done	dc0210fec62b6aaf
+6434	6519	7857820144654439	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/CMakeFiles/linalg-populate-complete	dc0210fec62b6aaf
+6434	6519	7857820144654439	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/linalg-subbuild/linalg-populate-prefix/src/linalg-populate-stamp/linalg-populate-done	dc0210fec62b6aaf

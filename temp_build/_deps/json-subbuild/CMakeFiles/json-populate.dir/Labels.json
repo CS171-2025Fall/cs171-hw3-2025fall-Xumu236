@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/CMakeFiles/json-populate"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/CMakeFiles/json-populate.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/CMakeFiles/json-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test.rule"
+		},
+		{
+			"file" : "C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"json-populate"
+		],
+		"name" : "json-populate"
+	}
+}

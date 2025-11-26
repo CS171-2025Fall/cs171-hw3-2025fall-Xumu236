@@ -1,0 +1,21 @@
+# ninja log v6
+2	69	7857819017603921	fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-mkdir	671e3155dd0b1a7
+2	69	7857819017603921	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-mkdir	671e3155dd0b1a7
+69	7412	7857819090896101	fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-download	fe025993abfb3064
+69	7412	7857819090896101	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-download	fe025993abfb3064
+7413	7548	7857819091101984	fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-update	9ff1f8a61f7d8c64
+7413	7548	7857819091101984	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-update	9ff1f8a61f7d8c64
+7551	7613	7857819092992103	fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-patch	aa634c7ddf52bbc3
+7551	7613	7857819092992103	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-patch	aa634c7ddf52bbc3
+7613	7671	7857819093635068	fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-configure	e5b9d73db8ba1683
+7613	7671	7857819093635068	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-configure	e5b9d73db8ba1683
+7671	7737	7857819094298149	fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-build	1c864ee477a79a64
+7671	7737	7857819094298149	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-build	1c864ee477a79a64
+7737	7793	7857819094855107	fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-install	db34d7c9d865c246
+7737	7793	7857819094855107	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-install	db34d7c9d865c246
+7793	7855	7857819095472950	fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-test	47fca9730de21e74
+7793	7855	7857819095472950	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-test	47fca9730de21e74
+7855	7938	7857819096316722	CMakeFiles/fmt-populate-complete	18dda093d4bdd738
+7855	7938	7857819096316722	fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-done	18dda093d4bdd738
+7855	7938	7857819096316722	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/fmt-subbuild/CMakeFiles/fmt-populate-complete	18dda093d4bdd738
+7855	7938	7857819096316722	C:/Course/CG/cs171-hw3-2025fall-Xumu236/temp_build/_deps/fmt-subbuild/fmt-populate-prefix/src/fmt-populate-stamp/fmt-populate-done	18dda093d4bdd738
